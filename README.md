@@ -1262,11 +1262,11 @@
         function importSampleData() {
             // Fallback sample data if Google Sheets fails
             const sampleData = [
-                { name: "Drs. H. Abdul Wahab", niy: "196501011990031001", subject: "Bahasa Arab", username: "abdulwahab", password: "196501011990031001" },
-                { name: "Hj. Siti Aminah, S.Pd.I", niy: "197203152005012001", subject: "Al-Qur'an Hadits", username: "sitiaminah", password: "197203152005012001" },
-                { name: "Ahmad Fauzi, S.Pd", niy: "198505102009021001", subject: "Matematika", username: "ahmadfauzi", password: "198505102009021001" },
-                { name: "Fatimah Zahra, S.Pd", niy: "199001152014022001", subject: "Bahasa Indonesia", username: "fatimahzahra", password: "199001152014022001" },
-                { name: "Muhammad Ridwan, S.Pd.I", niy: "198712202011011001", subject: "Fiqih", username: "muhammadridwan", password: "198712202011011001" }
+                { name: "Drs. H. SAICHUL", niy: "099.07.001", subject: "ASWAJA", username: "saichul", password: "123" },
+                { name: "NOER AZIZI", niy: "099.07.002", subject: "FIKIH, username: "noerazizi", password: "123" },
+                { name: "H. CHOLIS AWALUDIN, SE", niy: "099.07.003", subject: "EKONOMI", username: "cholishawaludin", password: "123" },
+                { name: "DWI NURCAHYANI, S.Si", niy: "099.07.004", subject: "FISIKA", username: "dwinurcahyani", password: "123" },
+                { name: "LUXITASARI, S.Pd", niy: "099.07.006", subject: "BHS INGGRIS", username: "luxitasari", password: "123" }
             ];
 
             showImportPreview(sampleData);
@@ -1279,20 +1279,18 @@
         // User accounts - load from localStorage or use defaults
         let userAccounts = JSON.parse(localStorage.getItem('userAccounts')) || [
             { username: 'admin', password: 'admin123', role: 'Administrator', name: 'Admin Sistem' },
-            { username: 'kepala', password: 'kepala123', role: 'Kepala Sekolah', name: 'Drs. H. Ahmad Fauzi, M.Pd.I' },
-            { username: 'waka', password: 'waka123', role: 'Wakil Kepala', name: 'Hj. Siti Khadijah, S.Pd.I' },
-            { username: 'tata_usaha', password: 'tu123', role: 'Tata Usaha', name: 'Muhammad Ridwan, S.Pd' },
+            
             // Teacher accounts will be auto-generated from teachers data
-            { username: 'abdulwahab', password: '123', role: 'Guru', name: 'Drs. H. Abdul Wahab' },
-            { username: 'sitiaminah', password: '123', role: 'Guru', name: 'Hj. Siti Aminah, S.Pd.I' },
-            { username: 'ahmadfauzi', password: '123', role: 'Guru', name: 'Ahmad Fauzi, S.Pd' },
-            { username: 'fatimahzahra', password: '123', role: 'Guru', name: 'Fatimah Zahra, S.Pd' },
-            { username: 'muhammadridwan', password: '123', role: 'Guru', name: 'Muhammad Ridwan, S.Pd.I' },
-            { username: 'khadijah', password: '123', role: 'Guru', name: 'Khadijah, S.Pd' },
-            { username: 'alihassan', password: '123', role: 'Guru', name: 'Ali Hassan, S.Pd' },
-            { username: 'maryam', password: '123', role: 'Guru', name: 'Maryam, S.Pd' },
-            { username: 'usman', password: '123', role: 'Guru', name: 'Usman, S.Pd' },
-            { username: 'aisyah', password: '123', role: 'Guru', name: 'Aisyah, S.Pd' }
+            { username: 'saichul', password: '123', role: 'Guru', name: 'Drs. H. SAICHUL' },
+            { username: 'noerazizi', password: '123', role: 'Guru', name: 'NOER AZIZI' },
+            { username: 'cholishawaludin', password: '123', role: 'Guru', name: 'H. CHOLIS AWALUDIN, SE' },
+            { username: 'dwinurcahyani', password: '123', role: 'Guru', name: 'DWI NURCAHYANI, S.Si' },
+            { username: 'luxitasari', password: '123', role: 'Guru', name: 'LUXITASARI, S.Pd' },
+            { username: 'endangsrirahayu', password: '123', role: 'Guru', name: 'Dra. ENDANG SRI RAHAYU' },
+            { username: 'vikakhullamahbubah', password: '123', role: 'Guru', name: 'Vika Khulla Mahbubah, M.Pd' },
+            { username: 'zekkiyah', password: '123', role: 'Guru', name: 'ZEKKIYAH AL ALUF, S.Pd' },
+            { username: 'anshori', password: '123', role: 'Guru', name: 'ANSHORI, S.Pd' },
+            { username: 'afkhoriatul', password: '123', role: 'Guru', name: 'AFKHORIATUL HILMI, M.Pd' }
         ];
 
         let currentUser = null;
